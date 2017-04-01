@@ -66,7 +66,7 @@ class TestTennis(unittest.TestCase):
         for testcase in test_cases:
             (p1Points, p2Points, score, p1Name, p2Name) = testcase
             game = play_game(p1Points, p2Points, p1Name, p2Name)
-            self.assertEquals(score, game.score())
+            self.assertEquals(score, game.print_score())
  
 if __name__ == "__main__":
     unittest.main() 
